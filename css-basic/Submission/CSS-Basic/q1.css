@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f6ff;
+    color: #222;
+    font-family: Arial;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+
+    background-color: #1e3a8a;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 5%;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+/* Main */
+main {
+    padding-top: 70px;
+}
+
+/* Home */
+.home {
+    height: 70vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 5%;
+    background-color: #dbeafe;
+}
+
+.home div {
+    width: 50%;
+}
+
+.home h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.home img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* About */
+.about {
+    padding: 5vh 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Contact */
+.contact {
+    padding: 4vh;
+    text-align: center;
+    background-color: #dbeafe;
+}
+
+/* Footer */
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1e3a8a;
+    color: white;
+}

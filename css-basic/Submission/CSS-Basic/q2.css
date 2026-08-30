@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-color: #f2f6ff;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+/* 3 cards in one row */
+.team {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card */
+.card {
+    width: 30%;
+    padding: 25px;
+    margin: 10px;
+
+    background-color: white;
+
+    border: 2px solid #333;
+    border-radius: 15px;
+
+    box-shadow: 5px 5px 10px gray;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #1e3a8a;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+/* Highlight Team Lead */
+.lead {
+    background-color: #dbeafe;
+    border: 3px dashed #1e3a8a;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+
+    .team {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
