@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.form-container {
+    width: 450px;
+    max-width: 100%;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px gray;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Uniform spacing between form elements */
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #ddd;
+    font-size: 16px;
+}
+
+/* Different outline style for input elements */
+input {
+    outline: 2px solid transparent;
+    outline-offset: 3px;
+}
+
+/* Change outline color when input gets focus */
+input:focus {
+    outline: 2px solid blue;
+    outline-offset: 3px;
+    border-color: blue;
+}
+
+/* Dashed outline for textarea */
+textarea {
+    outline: 2px dashed transparent;
+    outline-offset: 4px;
+    resize: vertical;
+}
+
+/* Change textarea outline on focus */
+textarea:focus {
+    outline: 2px dashed green;
+    outline-offset: 4px;
+    border-color: green;
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px gray;
+}
+
+/* Button focus outline */
+button:focus {
+    outline: 3px double orange;
+    outline-offset: 4px;
+}

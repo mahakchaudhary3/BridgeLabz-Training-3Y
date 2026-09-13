@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.box {
+    width: 220px;
+    min-height: 180px;
+    background-color: white;
+    transition: border-color 0.4s ease;
+}
+
+.box:hover {
+    border-color: red;
+}
+
+/* Different Border Styles */
+
+.solid {
+    border: 5px solid black;
+    padding: 20px;
+}
+
+.dashed {
+    border: 5px dashed black;
+    padding: 30px;
+}
+
+.double {
+    border: 8px double black;
+    padding: 15px;
+}
+
+.groove {
+    border: 8px groove black;
+    padding: 25px;
+}
+
+/* Rounded Corners */
+
+.rounded-small {
+    border: 5px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rounded-large {
+    border: 5px solid black;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.rounded-circle {
+    border: 5px solid black;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}

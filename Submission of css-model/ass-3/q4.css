@@ -1,0 +1,110 @@
+/* ============================= */
+/* General Styling */
+/* ============================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+/* ============================= */
+/* ATTRIBUTE SELECTORS */
+/* ============================= */
+
+/* Selects input elements whose type is exactly "text" */
+input[type="text"] {
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Selects links whose href starts with "https" */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+
+/* ============================= */
+/* PSEUDO-CLASSES */
+/* ============================= */
+
+/* :hover - applies style when mouse is placed over element */
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* :focus - applies style when input is selected */
+.focus-input:focus {
+    border: 3px solid orange;
+    outline: none;
+}
+
+/* :nth-child() - selects specific child */
+.items li:nth-child(odd) {
+    background-color: lightblue;
+}
+
+.items li:nth-child(even) {
+    background-color: lightgreen;
+}
+
+
+/* ============================= */
+/* PSEUDO-ELEMENTS */
+/* ============================= */
+
+/* ::before - adds content before the element */
+.special-text::before {
+    content: "★ ";
+    color: red;
+}
+
+/* ::after - adds content after the element */
+.special-text::after {
+    content: " ✓";
+    color: green;
+}
+
+
+/* ============================= */
+/* COMBINATORS */
+/* ============================= */
+
+/* Descendant combinator - selects all p elements inside .parent */
+.parent p {
+    color: blue;
+}
+
+/* Child combinator (>) - selects only direct child p elements */
+.parent > p {
+    font-weight: bold;
+}
+
+/* Adjacent sibling combinator (+) - selects the first span immediately after p */
+.parent p + span {
+    color: red;
+    font-weight: bold;
+}
+
+/* General sibling combinator (~) - selects all spans after p */
+.parent p ~ span {
+    text-decoration: underline;
+}
