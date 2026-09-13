@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Main Grid */
+.blog {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 3fr;
+
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+/* Header */
+header {
+    grid-area: header;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sidebar */
+aside {
+    grid-area: sidebar;
+
+    background-color: white;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+aside a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main */
+main {
+    grid-area: main;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+/* Blog Posts */
+article {
+    background-color: white;
+
+    padding: 25px;
+    margin: 5px;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+article a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+
+    .blog {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Very Small Screens */
+@media screen and (max-width: 500px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
