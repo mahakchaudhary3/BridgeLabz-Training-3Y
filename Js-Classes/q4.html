@@ -1,0 +1,52 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form Builder</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        input, button {
+            display: block;
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        pre {
+            background-color: #f2f2f2;
+            padding: 15px;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Custom Form Builder</h2>
+
+    <!-- Dynamic form will be created here -->
+    <div id="formContainer"></div>
+
+    <!-- Submitted data will be displayed here -->
+    <h3>Form Data:</h3>
+    <pre id="output"></pre>
+
+    <script src="q4.js"></script>
+
+</body>
+</html>
+```
