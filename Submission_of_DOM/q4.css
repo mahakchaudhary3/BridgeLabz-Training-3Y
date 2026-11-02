@@ -1,0 +1,25 @@
+#dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+#dropdownBtn {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#options {
+    display: none;
+    border: 1px solid black;
+    width: 150px;
+}
+
+.option {
+    padding: 8px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: lightblue;
+}
